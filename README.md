@@ -8,7 +8,6 @@
 
 ✍ Estudante de Tecnologia em Sistemas para Internet<br />
 📅 23 anos<br />
-🗺 São João da Boa Vista/SP - Brasil<br />
 
 Entusiasta da programação web e mobile, em especial com front-end, onde posso liberar minha criatividade e apresentar minhas ideias de forma visual.
 
