@@ -11,6 +11,6 @@
 
 Entusiasta da programação web e mobile, em especial com front-end, onde posso liberar minha criatividade e apresentar minhas ideias de forma visual.
 
-👀 Eu posto meu trabalho, lá no [meu instagram!](https://instagram.com/gabrielrusso.me/)
+👀 Eu posto meu trabalho lá no [meu instagram!](https://instagram.com/gabrielrusso.me/)
 
 💬 Para conhecer mais sobre meu trabalho acesse [meu portfolio!](http://gabrielrusso.me/)
