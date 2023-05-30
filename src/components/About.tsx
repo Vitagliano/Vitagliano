@@ -18,9 +18,9 @@ export const About = () => {
       <div className="mt-4 text-gray-400 mb-8 flex gap-4 flex-col">
         <p>I&apos;m 25 years old and based in São Paulo, Brazil.</p>
         <p>
-          I&apos;ve been building websites, studying design, landing pages and search
-          engine optimization for almost a decade. I can quickly create high
-          quality landing pages, blogs, directories and more using web
+          I&apos;ve been building websites, studying design, landing pages and
+          search engine optimization for almost a decade. I can quickly create
+          high quality landing pages, blogs, directories and more using web
           technologies.
         </p>
         <p>
@@ -29,9 +29,12 @@ export const About = () => {
         </p>
       </div>
       <div className="flex justify-between items-center">
-        <Button className="!bg-blue-600 hover:!bg-blue-500  font-medium flex gap-2 py-3 px-4">
-          <EnvelopeIcon className="w-6 h-6" /> My curriculum
-        </Button>
+        <Link
+          className="text-white duration-150 bg-blue-600 hover:bg-blue-500 rounded-xl active:shadow-lg font-medium flex gap-2 py-3 px-4"
+          href="/"
+        >
+          My curriculum
+        </Link>
         <div className="flex gap-5">
           <Link
             className="text-gray-400 hover:text-indigo-500 transition-all"

@@ -1,5 +1,5 @@
 export const TailwindIcon = () => (
-  <svg viewBox="0 0 50 31">
+  <svg viewBox="0 0 50 31" width={24} height={24}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"

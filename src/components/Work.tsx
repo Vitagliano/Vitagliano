@@ -35,10 +35,10 @@ const work = [
 const workItems = work.map((item, idx) => (
   <li
     key={idx}
-    className="w-full font-medium grid gap-4 rounded-xl bg-gray-800/50 p-4 grid-cols-3"
+    className="w-full font-medium grid gap-4 rounded-xl bg-gray-800/50 p-4 sm:grid-cols-1 lg:grid-cols-3"
   >
-    <div className="grid col-span-2">
-      <div className="flex items-center gap-4 text-white">
+    <div className="lg:grid sm:flex w-full lg:col-span-2">
+      <div className="flex items-center gap-4 text-white w-full">
         <Image
           src={item.img}
           width={50}
@@ -46,10 +46,18 @@ const workItems = work.map((item, idx) => (
           alt={item.company}
           className="rounded-lg"
         />
-        <p className="font-bold">{item.title}</p>
+        <div>
+          <p className="font-bold">{item.title}</p>
+          <div className="text-gray-400 lg:hidden sm:flex flex-col text-sm">
+            <p className="font-bold">{item.company}</p>
+            <p className="text-gray-500 font-semibold">
+              {item.initialDate} - {item.finalDate}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div className="flex justify-start items-center">
+    <div className="hidden lg:flex sm:hidden justify-start items-center">
       <div className="text-gray-400 flex flex-col text-sm">
         <p className="font-bold">{item.company}</p>
         <p className="text-gray-500 font-semibold">
