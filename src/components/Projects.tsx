@@ -8,7 +8,7 @@ export const Projects = () => {
       <h5 className="mt-0 mb-4 text-white text-xl leading-normal font-light">
         Projects
       </h5>
-      <div className="grid grid-cols-3 grid-rows-2 gap-4">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-4">
         {projects.map((item, index) => (
           <div className="w-full">
             <a href={"/projects/" + item.id}>
