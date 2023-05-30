@@ -10,21 +10,21 @@ export const About = () => {
   return (
     <Card>
       <h1 className="text-gray-200 text-2xl leading-tight tracking-tight ">
-        Hey, I'm Gabriel Russo Vitagliano{" "}
+        Hey, I&apos;m Gabriel Russo Vitagliano{" "}
         <span className="text-gray-400 font-light">
           - a Front-end Developer & UI/UX Designer
         </span>
       </h1>
       <div className="mt-4 text-gray-400 mb-8 flex gap-4 flex-col">
-        <p>I'm 25 years old and based in São Paulo, Brazil.</p>
+        <p>I&apos;m 25 years old and based in São Paulo, Brazil.</p>
         <p>
-          I've been building websites, studying design, landing pages and search
+          I&apos;ve been building websites, studying design, landing pages and search
           engine optimization for almost a decade. I can quickly create high
           quality landing pages, blogs, directories and more using web
           technologies.
         </p>
         <p>
-          I'm currently delving into Web3, developing dApps and designing
+          I&apos;m currently delving into Web3, developing dApps and designing
           usability flows for this new ecosystem.
         </p>
       </div>

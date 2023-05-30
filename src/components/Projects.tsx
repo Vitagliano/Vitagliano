@@ -10,7 +10,7 @@ export const Projects = () => {
       </h5>
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-4">
         {projects.map((item, index) => (
-          <div className="w-full">
+          <div className="w-full" key={item.id}>
             <a href={"/projects/" + item.id}>
               <div className="relative">
                 <div className="overflow-hidden h-80 rounded-xl border border-slate-50/20 w-full">
