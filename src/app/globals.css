@@ -1,4 +1,51 @@
 @tailwind base;
+/* Firefox */
+.project {
+  scrollbar-width: thin;
+}
+
+/* Chrome, Edge, and Safari */
+.project::-webkit-scrollbar {
+  padding: 10px;
+  width: 15px;
+  border-radius: 15px;
+  border-color: rgb(248 250 252 / 1);
+  border-width: 1px;
+}
+
+.project::-webkit-scrollbar-track {
+  background-color: #111318;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(51 65 85 / 0.25)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"),
+    radial-gradient(
+      circle farthest-corner at 100% 0%,
+      rgba(17, 19, 24, 0),
+      rgba(17, 19, 24, 0.6) 5%,
+      rgba(17, 19, 24, 0.95) 10%,
+      rgba(17, 19, 24, 0.98) 25%,
+      rgba(17, 19, 24, 0.97) 55%,
+      rgba(17, 19, 24, 0.75) 65%,
+      #111318 75%,
+      rgba(17, 19, 24, 0.95)
+    ),
+    radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #111318,
+      rgba(114, 146, 255, 0.5)
+    );
+  background-position: 0% 0%, 0px 0px, 0px 0px;
+  background-size: 24px, auto, auto;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-radius: 15px;
+  border: 1px solid rgba(248, 250, 252, 0.2);
+}
+
+.project::-webkit-scrollbar-thumb {
+  background-color: #2563eb;
+  border-radius: 15px;
+  border: 3px solid #2563eb;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +71,59 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.bg {
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: repeat;
+  color: rgba(227, 229, 232, 0.5);
+  font-weight: 300;
+}
+
+.section-bg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #111318;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(51 65 85 / 0.25)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"),
+    radial-gradient(
+      circle farthest-corner at 100% 0%,
+      rgba(17, 19, 24, 0),
+      rgba(17, 19, 24, 0.6) 5%,
+      rgba(17, 19, 24, 0.95) 10%,
+      rgba(17, 19, 24, 0.98) 25%,
+      rgba(17, 19, 24, 0.97) 55%,
+      rgba(17, 19, 24, 0.75) 65%,
+      #111318 75%,
+      rgba(17, 19, 24, 0.95)
+    ),
+    radial-gradient(
+      circle farthest-corner at 50% 50%,
+      #111318,
+      rgba(114, 146, 255, 0.5)
+    );
+  background-position: 0% 0%, 0px 0px, 0px 0px;
+  background-size: 24px, auto, auto;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.bg-grid-slate-100 {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='24' height='24' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+:is(.dark .dark\:bg-grid-slate-700\/25) {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='24' height='24' fill='none' stroke='rgb(51 65 85 / 0.25)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 }
