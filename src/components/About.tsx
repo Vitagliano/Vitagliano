@@ -31,26 +31,26 @@ export const About = () => {
       <div className="flex justify-between items-center">
         <Link
           className="text-white duration-150 bg-blue-600 hover:bg-blue-500 rounded-xl active:shadow-lg font-medium flex gap-2 py-3 px-4"
-          href="/"
+          href="/cv.pdf"
         >
           My curriculum
         </Link>
         <div className="flex gap-5">
           <Link
-            className="text-gray-400 hover:text-indigo-500 transition-all"
+            className="text-gray-400 hover:text-blue-500 transition-all"
             href="https://github.com/0xRusso"
           >
             <GithubIcon />
           </Link>
 
           <Link
-            className="text-gray-400 hover:text-indigo-500 transition-all"
+            className="text-gray-400 hover:text-blue-500 transition-all"
             href="https://www.linkedin.com/in/gabrielrvita/"
           >
             <LinkedInIcon />
           </Link>
           <Link
-            className="text-gray-400 hover:text-indigo-500 transition-all"
+            className="text-gray-400 hover:text-blue-500 transition-all"
             href="https://twitter.com/0xRusso"
           >
             <TwitterIcon />
