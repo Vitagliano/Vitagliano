@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "blues",
     name: "Blues NFT",
-    type: "UI/UX Design & Development",
+    type: "UI/UX Design",
     img: "/img/projects/blues-cover.png",
     projectImg: "/img/projects/blues.png",
   },

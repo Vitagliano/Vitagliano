@@ -20,7 +20,7 @@ export const Language = () => {
           <USAFlag />
           <div className="text-gray-100 flex flex-col text-sm">
             <p className="font-bold">English</p>
-            <p className="text-gray-500 font-semibold">Intermediary</p>
+            <p className="text-gray-500 font-semibold">Intermediate</p>
           </div>
         </div>
       </div>

@@ -22,9 +22,17 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
         <section className="section-bg">
           <div className="px-4 lg:px-8 max-w-screen-xl mx-auto w-full py-12">
             <Card>
-              <h1 className="text-gray-200 text-2xl leading-tight tracking-tight ">
-                Project not found!
-              </h1>
+              <div className="!flex gap-2 items-center">
+                <Link
+                  href="/"
+                  className="hover:bg-slate-500/10 p-2 rounded-lg text-gray-200 hover:text-blue-500 transition-all"
+                >
+                  <ArrowLeftOnRectangleIcon className="h-6 w-6" />
+                </Link>
+                <h1 className="text-gray-200 text-2xl leading-tight tracking-tight ">
+                  Project not found!
+                </h1>
+              </div>
             </Card>
           </div>
         </section>
@@ -36,15 +44,15 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
     <div>
       <section className="section-bg">
         <div className="px-4 lg:px-8 max-w-screen-xl mx-auto w-full py-12 flex flex-col gap-4">
-          <Card className="flex items-center">
-            <div className="flex items-center gap-6 ">
+          <Card className="flex items-center !w-full">
+            <div className="flex items-center gap-6 w-full h-auto flex-row">
               <Link
                 href="/"
-                className="hover:bg-slate-500/10 p-2 rounded-lg text-gray-200 hover:text-blue-500 transition-all"
+                className="hover:bg-slate-500/10 p-2 rounded-lg text-gray-200 hover:text-blue-500 transition-all self-center"
               >
                 <ArrowLeftOnRectangleIcon className="h-6 w-6" />
               </Link>
-              <div>
+              <div className="mx-auto">
                 <h1 className="text-gray-200 text-2xl leading-tight tracking-tight mb-2">
                   {project.name}
                 </h1>

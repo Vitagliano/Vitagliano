@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "./Card";
 import { projects } from "@/utils/projects";
 
@@ -11,13 +12,14 @@ export const Projects = () => {
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-4">
         {projects.map((item, index) => (
           <div className="w-full" key={item.id}>
-            <a href={"/projects/" + item.id}>
+            <Link href={"/projects/" + item.id}>
               <div className="relative">
                 <div className="overflow-hidden h-80 rounded-xl border border-slate-50/20 w-full">
-                  <img
+                  <Image
                     src={item.img}
+                    fill={true}
                     alt="portfolio"
-                    className="object-cover h-full"
+                    className="object-cover h-full rounded-xl"
                   />
 
                   <div className="absolute w-full top-0 bottom-0 z-10 rounded-lg py-6 px-4 text-center flex justify-end flex-col items-start custom-gradient">
@@ -32,7 +34,7 @@ export const Projects = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
