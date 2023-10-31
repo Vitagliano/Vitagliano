@@ -16,7 +16,7 @@ export const About = () => {
         </span>
       </h1>
       <div className="mt-4 text-gray-400 mb-8 flex gap-4 flex-col">
-        <p>I&apos;m 25 years old and based in São Paulo, Brazil.</p>
+        <p>I&apos;m 26 years old and based in São Paulo, Brazil.</p>
         <p>
           I&apos;ve been building websites, studying design, landing pages and
           search engine optimization for almost a decade. I can quickly create
@@ -38,7 +38,7 @@ export const About = () => {
         <div className="flex gap-5">
           <Link
             className="text-gray-400 hover:text-blue-500 transition-all"
-            href="https://github.com/0xRusso"
+            href="https://github.com/Vitagliano"
           >
             <GithubIcon />
           </Link>
