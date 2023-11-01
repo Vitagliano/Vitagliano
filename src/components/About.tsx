@@ -24,8 +24,8 @@ export const About = () => {
           technologies.
         </p>
         <p>
-          I&apos;m currently delving into Web3, developing dApps and designing
-          usability flows for this new ecosystem.
+          I&apos;m currently delving into React.js, Next.js, Typescript, GraphQL, AWS
+          and other tools within the front-end ecosystem.
         </p>
       </div>
       <div className="flex justify-between items-center">

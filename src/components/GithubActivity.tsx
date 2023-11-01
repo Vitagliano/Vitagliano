@@ -8,7 +8,7 @@ export const GithubActivity = () => {
       <h5 className="mt-0 mb-4 text-white text-xl leading-normal font-light">
         Github Activity
       </h5>
-      <GitHubCalendar username="0xRusso" />
+      <GitHubCalendar username="Vitagliano" />
     </Card>
   );
 };

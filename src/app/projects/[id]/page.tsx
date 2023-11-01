@@ -45,7 +45,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ params }) => {
       <section className="section-bg">
         <div className="px-4 lg:px-8 max-w-screen-xl mx-auto w-full py-12 flex flex-col gap-4">
           <Card className="flex items-center !w-full">
-            <div className="flex items-center gap-6 w-full h-auto flex-row">
+            <div className="flex items-center w-full h-auto flex-row">
               <Link
                 href="/"
                 className="hover:bg-slate-500/10 p-2 rounded-lg text-gray-200 hover:text-blue-500 transition-all self-center"
