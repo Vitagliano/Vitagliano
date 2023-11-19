@@ -26,7 +26,7 @@ export const About = () => {
         <p>
           I&apos;m currently delving into React.js, Next.js, Typescript and
           TailwindCSS. I&apos;m also focused on UX and UI Design in addition to
-          UX Research, looking to always improve my interfaces
+          UX Research, looking to always improve my interfaces.
         </p>
       </div>
       <div className="flex justify-between items-center">
