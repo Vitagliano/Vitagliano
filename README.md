@@ -6,5 +6,5 @@ I've been building websites, studying design, landing pages and search engine op
 
 - ⚙️ I use daily: `React`, `Next.js`, `TailwindCSS`, `HTML`, `GraphQL`, `AWS`, `Figma`
 - 💬 Ping me about **design**, **branding**, **react**, **javascript**, **web3**, **development**, **design thinking**
-- 📫 Reach me: [twitter.com/0xRusso](https://twitter.com/0xRusso) or [linkedin.com/in/gabrielrvita/](https://linkedin.com/in/gabrielrvita/)
+- 📫 Reach me: [twitter.com/gabrielrvita](https://twitter.com/gabrielrvita) or [linkedin.com/in/gabrielrvita/](https://linkedin.com/in/gabrielrvita/)
 - ☕ Fun fact: I have 3 espresso machines and several different conventional coffee machines at home
