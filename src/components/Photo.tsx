@@ -16,7 +16,7 @@ export function Photo() {
   const handleNext = () => setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <Card className="relative rounded-2xl shadow-lg max-w-md mx-auto !p-0">
+    <Card className="relative rounded-2xl shadow-lg max-w-md mx-auto  !p-0">
       {/* Photo */}
       <div className="overflow-hidden rounded-t-xl">
         <Image
@@ -24,7 +24,7 @@ export function Photo() {
           alt="Me"
           width={600}
           height={600}
-          className="object-cover w-full rounded-lg h-auto border-inherit border-2 border-[#151515]"
+          className="object-cover w-full rounded-t-xl rounded-b-lg h-auto border-inherit border-2 border-zinc-900"
           priority
         />
       </div>
