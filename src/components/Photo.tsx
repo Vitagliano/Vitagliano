@@ -16,7 +16,7 @@ export function Photo() {
   const handleNext = () => setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <Card className="relative rounded-2xl shadow-lg max-w-md mx-auto border border-neutral-800 !p-0">
+    <Card className="relative rounded-2xl shadow-lg max-w-md mx-auto !p-0">
       {/* Photo */}
       <div className="overflow-hidden rounded-t-xl">
         <Image
