@@ -15,7 +15,7 @@ export const Projects = () => {
                   <img
                     src={item.img}
                     alt="portfolio"
-                    className="object-cover w-full rounded-lg border-inherit border-2 border-[#151515]"
+                    className="object-cover w-full rounded-t-xl rounded-b-lg border-inherit border border-[#151515]"
                   />
 
                   
