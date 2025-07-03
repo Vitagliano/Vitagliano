@@ -1,7 +1,7 @@
 export const HTMLIcon = () => (
   <svg
-    width="24px"
-    height="24px"
+    width="16px"
+    height="16px"
     viewBox="-1 0 20 20"
     version="1.1"
     className="text-orange-500 fill-orange-500"

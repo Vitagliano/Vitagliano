@@ -1,40 +1,37 @@
-import Link from "next/link";
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import { Card } from "./Card";
 import { projects } from "@/utils/projects";
 
 export const Projects = () => {
   return (
-    <Card>
-      <h5 className="mt-0 mb-4 text-white text-xl leading-normal font-light">
-        Projects
+    <Card className="p-4">
+      <h5 className="mt-0 mb-4 text-white text-lg leading-normal font-semibold">
+        Recent Work
       </h5>
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-4">
         {projects.map((item, index) => (
           <div className="w-full" key={item.id}>
-            <Link href={"/projects/" + item.id}>
-              <div className="relative">
-                <div className="overflow-hidden h-80 rounded-xl border border-slate-50/20 w-full">
-                  <Image
+              <div className="relative bg-[#151515] border border-zinc-800 rounded-xl h-full">
+                  <img
                     src={item.img}
-                    fill={true}
                     alt="portfolio"
-                    className="object-cover h-full rounded-xl"
+                    className="object-cover w-full rounded-lg border-inherit border-2 border-[#151515]"
                   />
 
-                  <div className="absolute w-full top-0 bottom-0 z-10 rounded-lg py-6 px-4 text-center flex justify-end flex-col items-start custom-gradient">
-                    <div className="w-full font-medium text-white flex-col flex rounded-xl justify-center items-start bg-gray-800 p-4">
-                      <span className="text-gray-300 text-md font-medium leading-tight tracking-tight m-0">
+                  
+                <div className="w-full text-center flex justify-end flex-col items-start">
+                    <div className="w-full font-medium text-white flex-col flex rounded-xl justify-center items-start p-4">
+            <a href={item.link} className="hover:underline" target="_blank">
+            <h3 className="text-gray-100 text-lg leading-tight font-semibold tracking-tight m-0 p-0">
+                        {item.name} 
+                      </h3>
+                      </a>
+            <span className="text-gray-300 text-sm font-medium leading-tight tracking-tight mt-0.5 mb-0">
                         {item.type}
                       </span>
-                      <h3 className="text-gray-100 text-2xl leading-tight font-semibold tracking-tight m-0 p-0">
-                        {item.name}
-                      </h3>
-                    </div>
-                  </div>
                 </div>
+                  </div>
               </div>
-            </Link>
           </div>
         ))}
       </div>

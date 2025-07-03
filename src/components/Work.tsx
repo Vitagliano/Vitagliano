@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const work = [
   {
-    title: "UI/UX Designer",
+    title: "Frontend Dev & UI/UX Designer",
     company: "Perfect Flight",
     initialDate: "Jul 2022",
     finalDate: "Present",
     img: "/img/perfect.jpeg",
   },
   {
-    title: "Co-Founder & Front-end Dev",
+    title: "Co-Founder & Frontend Dev",
     company: "Darkside DAO",
     initialDate: "Feb 2022",
     finalDate: "Set 2022",
@@ -24,7 +24,7 @@ const work = [
     img: "/img/select.png",
   },
   {
-    title: "Full-stack Dev & IT Support",
+    title: "Fullstack Dev & IT Support",
     company: "Bauer",
     initialDate: "May 2021",
     finalDate: "Oct 2021",
@@ -33,48 +33,31 @@ const work = [
 ];
 
 const workItems = work.map((item, idx) => (
-  <li
-    key={idx}
-    className="w-full font-medium grid gap-4 rounded-xl bg-gray-800/50 p-4 sm:grid-cols-1 lg:grid-cols-3"
-  >
-    <div className="lg:grid sm:flex w-full lg:col-span-2">
-      <div className="flex items-center gap-4 text-white w-full">
-        <Image
-          src={item.img}
-          width={50}
-          height={50}
-          alt={item.company}
-          className="rounded-lg"
-        />
-        <div>
-          <p className="font-bold">{item.title}</p>
-          <div className="text-gray-400 lg:hidden sm:flex flex-col text-sm">
-            <p className="font-bold">{item.company}</p>
-            <p className="text-gray-500 font-semibold">
-              {item.initialDate} - {item.finalDate}
-            </p>
-          </div>
-        </div>
-      </div>
+  <div key={idx} className="flex gap-4 items-center">
+    <Image
+      src={item.img}
+      width={50}
+      height={50}
+      alt={item.company}
+      className="rounded-lg border border-zinc-900"
+    />
+    <div className="text-gray-100 flex flex-col">
+      <p className="font-bold text-[0.9rem]">{item.title}</p>
+      <p className="text-gray-400 font-semibold text-sm">{item.company}</p>
+      <p className="text-gray-500 font-semibold text-xs">
+        {item.initialDate} - {item.finalDate}
+      </p>
     </div>
-    <div className="hidden lg:flex sm:hidden justify-start items-center">
-      <div className="text-gray-400 flex flex-col text-sm">
-        <p className="font-bold">{item.company}</p>
-        <p className="text-gray-500 font-semibold">
-          {item.initialDate} - {item.finalDate}
-        </p>
-      </div>
-    </div>
-  </li>
+  </div>
 ));
 
 export const Work = () => {
   return (
-    <Card>
-      <h5 className="mt-0 mb-4 text-white text-xl leading-normal font-light">
+    <Card className="pt-4">
+      <h5 className="mt-0 mb-4 text-white text-lg leading-normal font-semibold">
         Work Experience
       </h5>
-      <ul className="flex gap-4 flex-col">{workItems}</ul>
+      <div className="flex gap-4 flex-col">{workItems}</div>
     </Card>
   );
 };
